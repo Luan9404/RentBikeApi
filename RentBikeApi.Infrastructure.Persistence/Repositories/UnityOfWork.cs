@@ -1,7 +1,7 @@
 using RentBikeApi.Core.Domain.Interfaces;
-using Desafio.Infrastructure.Persistence.Context;
+using RentBikeApi.Infrastructure.Persistence.Context;
 
-namespace Desafio.Infrastructure.Persistence.Repositories;
+namespace RentBikeApi.Infrastructure.Persistence.Repositories;
 
 public class UnityOfWork(AppDbContext context) : IUnityOfWork
 {

@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Desafio.Infrastructure.Persistence\Desafio.Infrastructure.Persistence.csproj" />
+      <ProjectReference Include="..\RentBikeApi.Infrastructure.Persistence\RentBikeApi.Infrastructure.Persistence.csproj" />
     </ItemGroup>
 
 </Project>

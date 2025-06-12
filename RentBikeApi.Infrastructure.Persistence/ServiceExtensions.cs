@@ -1,11 +1,11 @@
 using RentBikeApi.Core.Domain.Interfaces;
-using Desafio.Infrastructure.Persistence.Context;
-using Desafio.Infrastructure.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using RentBikeApi.Infrastructure.Persistence.Context;
+using RentBikeApi.Infrastructure.Persistence.Repositories;
 
-namespace Desafio.Infrastructure.Persistence;
+namespace RentBikeApi.Infrastructure.Persistence;
 
 public static class ServiceExtensions
 {

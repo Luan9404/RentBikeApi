@@ -1,7 +1,7 @@
 using RentBikeApi.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Desafio.Infrastructure.Persistence.Context;
+namespace RentBikeApi.Infrastructure.Persistence.Context;
 
 public class AppDbContext : DbContext
 {

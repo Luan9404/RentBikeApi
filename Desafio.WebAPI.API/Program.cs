@@ -1,6 +1,6 @@
 using RentBikeApi.Core.Application.Services;
-using Desafio.Infrastructure.Persistence;
-using Desafio.Infrastructure.Persistence.Context;
+using RentBikeApi.Infrastructure.Persistence;
+using RentBikeApi.Infrastructure.Persistence.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
