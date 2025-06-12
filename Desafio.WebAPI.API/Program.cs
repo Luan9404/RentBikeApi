@@ -1,4 +1,4 @@
-using Desafio.Core.Application.Services;
+using RentBikeApi.Core.Application.Services;
 using Desafio.Infrastructure.Persistence;
 using Desafio.Infrastructure.Persistence.Context;
 

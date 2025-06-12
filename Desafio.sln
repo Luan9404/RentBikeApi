@@ -8,7 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{97514E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Core.Domain", "Desafio.Core.Domain\Desafio.Core.Domain.csproj", "{81AAD3CC-F3FC-4CF6-A841-E30BCDECDF3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.Core.Application", "Desafio.Core.Application\Desafio.Core.Application.csproj", "{A39D300A-EF76-46D5-B859-EF4BA9B17F7E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.Core.Application", "RentBikeApi.Core.Application\RentBikeApi.Core.Application.csproj", "{A39D300A-EF76-46D5-B859-EF4BA9B17F7E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3D6F20A-9624-4A1A-9961-AC8A6866AFD9}"
 	ProjectSection(SolutionItems) = preProject

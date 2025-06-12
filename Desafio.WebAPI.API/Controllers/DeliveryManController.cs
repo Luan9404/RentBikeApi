@@ -1,5 +1,5 @@
-using Desafio.Core.Application.UseCases.DeliveryMan.RegisterDeliveryMan;
-using Desafio.Core.Application.UseCases.DeliveryMan.UploadDeliveryManDriverLicense;
+using RentBikeApi.Core.Application.UseCases.DeliveryMan.RegisterDeliveryMan;
+using RentBikeApi.Core.Application.UseCases.DeliveryMan.UploadDeliveryManDriverLicense;
 using Desafio.WebAPI.API.Models.Request;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

@@ -1,9 +1,9 @@
 using System.Text.Json.Serialization;
-using Desafio.Core.Application.UseCases.Motorcycles.CreateMotorcycle;
-using Desafio.Core.Application.UseCases.Motorcycles.DeleteMototcycle;
-using Desafio.Core.Application.UseCases.Motorcycles.GetAllMotorcycles;
-using Desafio.Core.Application.UseCases.Motorcycles.GetMotocycleById;
-using Desafio.Core.Application.UseCases.Motorcycles.UpdateMotorcycleLicensePlate;
+using RentBikeApi.Core.Application.UseCases.Motorcycles.CreateMotorcycle;
+using RentBikeApi.Core.Application.UseCases.Motorcycles.DeleteMototcycle;
+using RentBikeApi.Core.Application.UseCases.Motorcycles.GetAllMotorcycles;
+using RentBikeApi.Core.Application.UseCases.Motorcycles.GetMotocycleById;
+using RentBikeApi.Core.Application.UseCases.Motorcycles.UpdateMotorcycleLicensePlate;
 using Desafio.Core.Domain.Entities;
 using Desafio.WebAPI.API.Models.Request;
 using MediatR;
