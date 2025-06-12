@@ -16,10 +16,4 @@
       <PackageReference Include="MediatR" Version="12.5.0" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="UseCases\MotorcycleRent\GetRentById\" />
-      <Folder Include="UseCases\MotorcycleRent\RegisterRent\" />
-      <Folder Include="UseCases\MotorcycleRent\RegisterReturnDate\" />
-    </ItemGroup>
-
 </Project>

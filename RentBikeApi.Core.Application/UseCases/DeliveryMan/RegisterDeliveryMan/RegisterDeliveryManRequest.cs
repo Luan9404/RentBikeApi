@@ -15,4 +15,4 @@ public sealed record RegisterDeliveryManRequest(
     [property: JsonPropertyName("tipo_cnh")]
     string DriverLicenseType,
     [property: JsonPropertyName("imagem_cnh")]
-    string DriverLicenseImage): IRequest;
+    string? DriverLicenseImage): IRequest;

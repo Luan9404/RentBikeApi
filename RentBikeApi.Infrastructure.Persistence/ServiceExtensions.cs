@@ -16,5 +16,6 @@ public static class ServiceExtensions
         services.AddScoped<IMotorcycleRepository, MotorCycleRepository>();
         services.AddScoped<IDeliveryManRepository, DeliveryManRepository>();
         services.AddScoped<IUnityOfWork, UnityOfWork>();
+        services.AddScoped<IMotorcycleRentRepository, MotorcycleRentRepository>();
     }
 }

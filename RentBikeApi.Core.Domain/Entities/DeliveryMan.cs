@@ -10,6 +10,6 @@ public class DeliveryMan: BaseEntity
    public DateTime Birthday { get; set; }
    public string DriverLicense { get; set; }
    public string DriverLicenseType { get; set; }
-   public string DriverLicenseImage { get; set; }
+   public string? DriverLicenseImage { get; set; }
    public List<MotorcycleRent> Rents { get; set; } = new List<MotorcycleRent>();
 }
