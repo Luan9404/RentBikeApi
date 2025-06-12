@@ -1,5 +1,5 @@
 using AutoMapper;
-using Desafio.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Entities;
 
 namespace RentBikeApi.Core.Application.UseCases.Motorcycles.GetAllMotorcycles;
 

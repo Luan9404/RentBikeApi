@@ -1,4 +1,4 @@
-using Desafio.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Desafio.Infrastructure.Persistence.Context;

@@ -4,7 +4,6 @@ using RentBikeApi.Core.Application.UseCases.Motorcycles.DeleteMototcycle;
 using RentBikeApi.Core.Application.UseCases.Motorcycles.GetAllMotorcycles;
 using RentBikeApi.Core.Application.UseCases.Motorcycles.GetMotocycleById;
 using RentBikeApi.Core.Application.UseCases.Motorcycles.UpdateMotorcycleLicensePlate;
-using Desafio.Core.Domain.Entities;
 using Desafio.WebAPI.API.Models.Request;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

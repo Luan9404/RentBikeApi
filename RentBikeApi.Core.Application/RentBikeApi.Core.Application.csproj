@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Desafio.Core.Domain\Desafio.Core.Domain.csproj" />
+      <ProjectReference Include="..\RentBikeApi.Core.Domain\RentBikeApi.Core.Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>

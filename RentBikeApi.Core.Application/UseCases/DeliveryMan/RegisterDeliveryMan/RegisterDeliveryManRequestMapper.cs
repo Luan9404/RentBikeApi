@@ -6,7 +6,7 @@ public class RegisterDeliveryManRequestMapper: Profile
 {
     public RegisterDeliveryManRequestMapper()
     {
-        CreateMap<RegisterDeliveryManRequest, Desafio.Core.Domain.Entities.DeliveryMan>();
+        CreateMap<RegisterDeliveryManRequest, Domain.Entities.DeliveryMan>();
     }
     
 }

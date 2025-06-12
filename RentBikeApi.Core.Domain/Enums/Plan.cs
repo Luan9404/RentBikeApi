@@ -1,4 +1,4 @@
-namespace Desafio.Core.Domain.Enums;
+namespace RentBikeApi.Core.Domain.Enums;
 
 public enum Plans
 {

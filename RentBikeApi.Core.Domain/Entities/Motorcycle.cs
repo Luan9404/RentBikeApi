@@ -1,6 +1,6 @@
-using Desafio.Core.Domain.Common;
+using RentBikeApi.Core.Domain.Common;
 
-namespace Desafio.Core.Domain.Entities;
+namespace RentBikeApi.Core.Domain.Entities;
 
 public class Motorcycle : BaseEntity
 {

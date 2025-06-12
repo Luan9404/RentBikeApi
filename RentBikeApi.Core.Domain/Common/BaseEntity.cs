@@ -1,4 +1,4 @@
-namespace Desafio.Core.Domain.Common;
+namespace RentBikeApi.Core.Domain.Common;
 
 public abstract class BaseEntity
 { 

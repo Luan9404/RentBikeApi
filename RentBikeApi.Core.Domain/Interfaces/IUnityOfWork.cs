@@ -1,4 +1,4 @@
-namespace Desafio.Core.Domain.Interfaces;
+namespace RentBikeApi.Core.Domain.Interfaces;
 
 public interface IUnityOfWork
 {

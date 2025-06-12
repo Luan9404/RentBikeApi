@@ -1,6 +1,6 @@
 using AutoMapper;
-using Desafio.Core.Domain.Entities;
-using Desafio.Core.Domain.Interfaces;
+using RentBikeApi.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Interfaces;
 using MediatR;
 
 namespace RentBikeApi.Core.Application.UseCases.Motorcycles.CreateMotorcycle;

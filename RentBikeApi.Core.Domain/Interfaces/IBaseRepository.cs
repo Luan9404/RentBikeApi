@@ -1,7 +1,7 @@
-using Desafio.Core.Domain.Common;
-using Desafio.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Common;
 
-namespace Desafio.Core.Domain.Interfaces;
+namespace RentBikeApi.Core.Domain.Interfaces;
 
 public interface IBaseRepository<T> where T : BaseEntity
 {

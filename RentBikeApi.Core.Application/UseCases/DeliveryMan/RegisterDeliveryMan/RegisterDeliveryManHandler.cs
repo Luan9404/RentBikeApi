@@ -1,5 +1,5 @@
 using AutoMapper;
-using Desafio.Core.Domain.Interfaces;
+using RentBikeApi.Core.Domain.Interfaces;
 using MediatR;
 
 namespace RentBikeApi.Core.Application.UseCases.DeliveryMan.RegisterDeliveryMan;
@@ -13,7 +13,7 @@ public class RegisterDeliveryManHandler(IMapper mapper, IDeliveryManRepository r
 
     public async Task Handle(RegisterDeliveryManRequest request, CancellationToken cancellationToken)
     {
-        var entity = _mapper.Map<RegisterDeliveryManRequest, Desafio.Core.Domain.Entities.DeliveryMan>(request);
+        var entity = _mapper.Map<RegisterDeliveryManRequest, Domain.Entities.DeliveryMan>(request);
         
         _repository.Create(entity);
         

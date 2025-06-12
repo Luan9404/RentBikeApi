@@ -1,6 +1,6 @@
-using Desafio.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Entities;
 
-namespace Desafio.Core.Domain.Interfaces;
+namespace RentBikeApi.Core.Domain.Interfaces;
 
 public interface IDeliveryManRepository: IBaseRepository<DeliveryMan>
 {

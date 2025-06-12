@@ -1,5 +1,5 @@
 using System.Text.Json.Serialization;
-using Desafio.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Entities;
 using MediatR;
 
 namespace RentBikeApi.Core.Application.UseCases.Motorcycles.GetMotocycleById;

@@ -1,6 +1,6 @@
-using Desafio.Core.Domain.Common;
-using Desafio.Core.Domain.Entities;
-using Desafio.Core.Domain.Interfaces;
+using RentBikeApi.Core.Domain.Common;
+using RentBikeApi.Core.Domain.Entities;
+using RentBikeApi.Core.Domain.Interfaces;
 using Desafio.Infrastructure.Persistence.Context;
 using Microsoft.EntityFrameworkCore;
 
