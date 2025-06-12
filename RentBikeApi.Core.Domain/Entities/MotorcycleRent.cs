@@ -13,4 +13,9 @@ public class MotorcycleRent : BaseEntity
     public DateTime EndDate { get; set; }
     public DateTime ExpectedEndDate { get; set; }
     public Plans Plan { get; set; }
+
+    public decimal CalculateRentValue()
+    {
+        return 10;
+    }
 }
