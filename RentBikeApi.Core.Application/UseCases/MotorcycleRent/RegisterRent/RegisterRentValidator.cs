@@ -2,9 +2,9 @@
 
 namespace RentBikeApi.Core.Application.UseCases.MotorcycleRent.RegisterRent;
 
-public class RegisterRentRequestValidator: AbstractValidator<RegisterRentRequest>
+public class RegisterRentValidator: AbstractValidator<RegisterRentRequest>
 {
-    public RegisterRentRequestValidator()
+    public RegisterRentValidator()
     {
         RuleFor(x => x.DeliveryManIdentifier)
             .NotEmpty()

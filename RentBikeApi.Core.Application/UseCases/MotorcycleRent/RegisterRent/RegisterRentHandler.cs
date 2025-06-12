@@ -4,7 +4,7 @@ using RentBikeApi.Core.Domain.Interfaces;
 
 namespace RentBikeApi.Core.Application.UseCases.MotorcycleRent.RegisterRent;
 
-public class RegisterRentRequestHandler(
+public class RegisterRentHandler(
     IMotorcycleRepository motorcycleRepository, 
     IDeliveryManRepository deliveryManRepository,
     IMotorcycleRentRepository motorcycleRentRepository,
@@ -23,6 +23,8 @@ public class RegisterRentRequestHandler(
             throw new ArgumentException("Entregador não encontrado.");
 
         var rent = mapper.Map<Domain.Entities.MotorcycleRent>(request);
+        rent.DeliveryManId = deliveryMan.Id;
+        rent.MotorcycleId = motorcycle.Id;
         motorcycleRentRepository.Create(rent);
 
         await unityOfWork.Commit();

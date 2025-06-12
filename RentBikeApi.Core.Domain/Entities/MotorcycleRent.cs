@@ -5,6 +5,8 @@ namespace RentBikeApi.Core.Domain.Entities;
 
 public class MotorcycleRent : BaseEntity
 {
+    public Guid MotorcycleId { get; set; }
+    public Guid DeliveryManId { get; set; }
     public DeliveryMan DeliveryMan { get; set; }
     public Motorcycle Motorcycle { get; set; }
     public DateTime InitialDate { get; set; }
