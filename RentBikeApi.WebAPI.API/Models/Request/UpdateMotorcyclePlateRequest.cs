@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Desafio.WebAPI.API.Models.Request;
+namespace RentBikeApi.WebAPI.API.Models.Request;
 
 public class UpdateMotorcyclePlateRequest
 {

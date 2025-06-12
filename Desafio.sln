@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.Infrastructure.Persistence", "RentBikeApi.Infrastructure.Persistence\RentBikeApi.Infrastructure.Persistence.csproj", "{49FA2A0B-4209-4B42-A333-49B80B4448C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.WebAPI.API", "Desafio.WebAPI.API\Desafio.WebAPI.API.csproj", "{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.WebAPI.API", "RentBikeApi.WebAPI.API\RentBikeApi.WebAPI.API.csproj", "{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

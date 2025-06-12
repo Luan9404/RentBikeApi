@@ -1,10 +1,10 @@
 using RentBikeApi.Core.Application.UseCases.DeliveryMan.RegisterDeliveryMan;
 using RentBikeApi.Core.Application.UseCases.DeliveryMan.UploadDeliveryManDriverLicense;
-using Desafio.WebAPI.API.Models.Request;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using RentBikeApi.WebAPI.API.Models.Request;
 
-namespace Desafio.WebAPI.API.Controllers;
+namespace RentBikeApi.WebAPI.API.Controllers;
 
 [ApiController]
 [Route("entregadores")]
