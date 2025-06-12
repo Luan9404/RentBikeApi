@@ -1,0 +1,6 @@
+﻿services:
+  desafio.presentation.api:
+    image: desafio.presentation.api
+    build:
+      context: .
+      dockerfile: Desafio.Presentation.API/Dockerfile
