@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using RentBikeApi.Core.Application.Services;
 using RentBikeApi.Infrastructure.Persistence;
 using RentBikeApi.Infrastructure.Persistence.Context;
@@ -11,18 +12,20 @@ builder.Services.ConfigureApplicationServices();
 builder.Services.AddControllers();
 
 var app = builder.Build();
-CreateDatabase(app);
 app.MapControllers();
 app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
-app.Run();
-
-static void CreateDatabase(WebApplication app)
+using (var scope = app.Services.CreateScope())
 {
-    var serviceScope = app.Services.CreateScope();
-    var dataContext = serviceScope.ServiceProvider.GetService<AppDbContext>();
-    dataContext?.Database.EnsureCreated();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AppDbContext>();
+    if (context.Database.GetPendingMigrations().Any())
+    {
+        context.Database.Migrate();
+    }
 }
+
+app.Run();

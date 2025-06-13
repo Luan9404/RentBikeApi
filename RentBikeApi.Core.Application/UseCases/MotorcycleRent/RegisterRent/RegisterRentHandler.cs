@@ -25,9 +25,10 @@ public class RegisterRentHandler(
         var rent = mapper.Map<Domain.Entities.MotorcycleRent>(request);
         rent.DeliveryManId = deliveryMan.Id;
         rent.MotorcycleId = motorcycle.Id;
+        rent.InitialDate = DateTime.UtcNow.AddDays(1);
+        rent.EndDate = rent.InitialDate.AddDays((int)rent.Plan);
         motorcycleRentRepository.Create(rent);
 
         await unityOfWork.Commit();
-
     }
 }

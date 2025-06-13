@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using MediatR;
+using RentBikeApi.Core.Domain.Enums;
 
 namespace RentBikeApi.Core.Application.UseCases.DeliveryMan.RegisterDeliveryMan;
 
@@ -13,6 +14,6 @@ public sealed record RegisterDeliveryManRequest(
     [property: JsonPropertyName("numero_cnh")]
     string DriverLicense,
     [property: JsonPropertyName("tipo_cnh")]
-    string DriverLicenseType,
+    DriverLicenseTypes DriverLicenseType,
     [property: JsonPropertyName("imagem_cnh")]
     string? DriverLicenseImage): IRequest;

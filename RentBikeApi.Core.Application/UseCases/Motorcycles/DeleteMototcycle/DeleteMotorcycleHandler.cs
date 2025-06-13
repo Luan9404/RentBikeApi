@@ -16,6 +16,9 @@ public class DeleteMotorcycleHandler(IMotorcycleRepository repository, IUnityOfW
         if (motorcycle == null)
             throw new Exception();
         
+        if(motorcycle.Rents.Count != 0)
+            throw new Exception();
+        
         _repository.Delete(motorcycle);
         
         await _unityOfWork.Commit();

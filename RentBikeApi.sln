@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.Infrastructure.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.WebAPI.API", "RentBikeApi.WebAPI.API\RentBikeApi.WebAPI.API.csproj", "{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentBikeApi.Infrastructure.Data", "RentBikeApi.Infrastructure.Data\RentBikeApi.Infrastructure.Data.csproj", "{767E69D9-79AC-4CDD-932F-FAB355617590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,7 @@ Global
 		{A39D300A-EF76-46D5-B859-EF4BA9B17F7E} = {D2A67912-DB02-4ADB-99FE-886A7A88AC25}
 		{49FA2A0B-4209-4B42-A333-49B80B4448C3} = {30F4ADED-51B7-417A-BDD7-52B92A5FBAAF}
 		{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2} = {97514E71-3FDF-4E5C-A76A-AF86B104CE68}
+		{767E69D9-79AC-4CDD-932F-FAB355617590} = {30F4ADED-51B7-417A-BDD7-52B92A5FBAAF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{81AAD3CC-F3FC-4CF6-A841-E30BCDECDF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -47,5 +50,9 @@ Global
 		{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66B16A0A-592B-4BFE-94B6-62C6ED69FBF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767E69D9-79AC-4CDD-932F-FAB355617590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767E69D9-79AC-4CDD-932F-FAB355617590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767E69D9-79AC-4CDD-932F-FAB355617590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767E69D9-79AC-4CDD-932F-FAB355617590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

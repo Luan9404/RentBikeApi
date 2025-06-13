@@ -17,5 +17,14 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Motorcycle>()
             .HasIndex(b => b.LicensePlate)
             .IsUnique();
+        
+        modelBuilder.Entity<DeliveryMan>()
+            .HasIndex(x => x.DriverLicense)
+            .IsUnique();
+        
+        modelBuilder.Entity<DeliveryMan>()
+            .HasIndex(x => x.TaxNumber)
+            .IsUnique();
+        
     }
 }

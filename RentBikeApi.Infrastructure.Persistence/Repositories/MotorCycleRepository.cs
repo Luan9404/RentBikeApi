@@ -20,6 +20,8 @@ public class MotorCycleRepository(AppDbContext context) : BaseRepository<Motorcy
     }
     public async Task<Motorcycle> GetByIdentifier(string identifier)
     {
-        return await Context.Motorcycle.FirstOrDefaultAsync(x=> x.Identifier == identifier && x.DeletedAt == null);
+        return await Context.Motorcycle
+            .Include(x => x.Rents)
+            .FirstOrDefaultAsync(x=> x.Identifier == identifier && x.DeletedAt == null);
     }
 }
