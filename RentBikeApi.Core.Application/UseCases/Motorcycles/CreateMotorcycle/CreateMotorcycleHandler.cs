@@ -5,19 +5,24 @@ using MediatR;
 
 namespace RentBikeApi.Core.Application.UseCases.Motorcycles.CreateMotorcycle;
 
-public class CreateMotorcycleHandler(IMotorcycleRepository repository, IMapper mapper, IUnityOfWork unityOfWork)
+public class CreateMotorcycleHandler(
+    IMotorcycleRepository repository, 
+    IMapper mapper, 
+    IUnityOfWork unityOfWork, 
+    IMediator mediator)
     : IRequestHandler<CreateMotorcycleRequest>
 {
-    private readonly IMotorcycleRepository _repository = repository;
-    private readonly IMapper _mapper = mapper;
-    private readonly IUnityOfWork _unityOfWork = unityOfWork;
 
     public async Task Handle(CreateMotorcycleRequest request, CancellationToken cancellationToken)
     {
-        var motorcycle = _mapper.Map<Motorcycle>(request);
+        var motorcycle = mapper.Map<Motorcycle>(request);
         
-        _repository.Create(motorcycle);
+        repository.Create(motorcycle);
 
-        await _unityOfWork.Commit();
+        await unityOfWork.Commit();
+        
+        var notification = mapper.Map<CreateMotorcycleNotification>(motorcycle);
+
+        await mediator.Publish(notification, cancellationToken);
     }
 }

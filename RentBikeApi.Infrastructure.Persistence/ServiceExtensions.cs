@@ -13,7 +13,7 @@ public static class ServiceExtensions
     public static void ConfigurePersistenceServices(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("Postgres");
-        services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(connectionString, 
+        services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(connectionString, 
             x => x.MigrationsAssembly(Assembly.GetExecutingAssembly().FullName)));
         services.AddScoped<IMotorcycleRepository, MotorCycleRepository>();
         services.AddScoped<IDeliveryManRepository, DeliveryManRepository>();

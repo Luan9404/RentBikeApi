@@ -8,5 +8,6 @@ public class CreateMotorcycleMapper: Profile
     public CreateMotorcycleMapper()
     {
         CreateMap<CreateMotorcycleRequest, Motorcycle>();
+        CreateMap<Motorcycle, CreateMotorcycleNotification>();
     }
 }
